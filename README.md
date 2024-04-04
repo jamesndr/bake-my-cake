@@ -1,2 +1,2 @@
-# bake-my-cake
+# Bake-my-cake
 Code repository for NIIT Frontend project - Bake my cake
