@@ -1,0 +1,35 @@
+#logo{
+    width: 200px;
+}
+#search{
+    margin-left: 10rem;
+}
+#header{
+    justify-content: space-between;
+    height: auto;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+#icons{
+    display: flex;
+    margin-right: 50px;
+}
+.icon-link{
+    margin: 0px 0px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: small;
+    color: wheat;
+}
+a{
+    width: 85px;
+    text-decoration: none;
+}
+.icon{
+    color: #fff;
+    margin-left: 4px;
+}
+.mat-toolbar.mat-primary {
+    --mat-toolbar-container-background-color: #0c122f;
+}

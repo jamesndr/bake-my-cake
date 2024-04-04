@@ -1,0 +1,33 @@
+<mat-toolbar id="header" color="primary">
+  <a routerLink="" matTooltip="Bake My Cake Logo"
+    ><img id="logo" src="../../assets/Bake-My-Cake-Logo.png" alt=""
+  /></a>
+  <app-search
+    id="search"
+    *ngIf="isHomeComponent"
+    (searchText)="onSearchText($event)"
+  ></app-search>
+  <div id="icons">
+    <a matTooltip="Home" routerLink="/" id="home-icon">
+      <mat-icon class="icon">home</mat-icon>
+      <p class="icon-link">Home</p>
+    </a>
+    <a
+      *ngIf="!isCakeCompLoggedIn"
+      matTooltip="Admin"
+      routerLink="/cake-request"
+    >
+      <mat-icon class="icon">person</mat-icon>
+      <p class="icon-link">Admin</p>
+    </a>
+    <a
+      *ngIf="isCakeCompLoggedIn"
+      matTooltip="Logout"
+      routerLink="/login"
+      (click)="logout()"
+    >
+      <mat-icon class="icon">logout</mat-icon>
+      <p class="icon-link">Logout</p>
+    </a>
+  </div>
+</mat-toolbar>

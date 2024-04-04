@@ -1,0 +1,282 @@
+<app-header></app-header>
+<section id="container">
+  <div id="cake-img-container">
+    <img
+      id="cake-img"
+      src="../../assets/{{ cake.cakeName }}.jpg"
+      alt="cake image"
+    />
+    <div id="product-desc">
+      <h3 class="cake-question">Product Description:</h3>
+      <p>{{ cake.cakeDescription }}</p>
+    </div>
+  </div>
+  <div id="cake-details">
+    <h1 class="cake-name">{{ cake.cakeName }}</h1>
+    <h3 id="cake-type">{{ cake.cakeType }}</h3>
+    <p><mat-icon id="star-icon" *ngFor="let star of stars">star</mat-icon></p>
+    <div id="price">
+      <span id="rupee-symbol">&#8377;</span>
+      <h2 id="cake-price">{{ cake.cakePrice }}</h2>
+    </div>
+    <div>
+      <form #orderForm="ngForm" (ngSubmit)="saveCakeOrder(orderForm)">
+        <div class="form-container">
+          <div>
+            <h3 class="cake-question">When do you want this product?</h3>
+            <mat-form-field class="form-field">
+              <mat-label>Select Delivery Date</mat-label>
+              <input
+                matInput
+                [min]="minDate"
+                name="deliveryDate"
+                #deliveryDate="ngModel"
+                [(ngModel)]="cakeOrder.deliveryDate"
+                [matDatepicker]="picker"
+                required
+                placeholder="Ex. 04/17/2023"
+              />
+              <mat-datepicker-toggle
+                matIconSuffix
+                [for]="picker"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+              <mat-error
+                class="error-msg"
+                *ngIf="deliveryDate?.errors?.['required']"
+              >
+                Delivery Date is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="right-side-input" *ngIf="cake.cakeType === 'Cake'">
+            <h3 class="cake-question">What is the message on the cake?</h3>
+            <mat-form-field class="form-field">
+              <mat-label>Message</mat-label>
+              <input
+                matInput
+                name="message"
+                #message="ngModel"
+                [(ngModel)]="cakeOrder.message"
+                minlength="5"
+                maxlength="25"
+                placeholder="Ex. Happy Birthday, James!"
+              />
+              <mat-error
+                class="error-msg"
+                *ngIf="message?.errors?.['required']"
+              >
+                Message is required
+              </mat-error>
+              <mat-error
+                class="error-msg"
+                *ngIf="message?.errors?.['minlength']"
+              >
+                Message length cannot be less than 5
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <div id="quantity-container" *ngIf="cake.cakeType !== 'Cake'">
+            <h3 class="cake-question">Quantity</h3>
+            <mat-form-field id="quantity">
+              <input
+                type="number"
+                name="quantity"
+                #quantity="ngModel"
+                [(ngModel)]="cakeOrder.quantity"
+                required
+                matInput
+                min="1"
+              />
+              <mat-error
+                class="error-msg"
+                *ngIf="quantity?.errors?.['required']"
+              >
+                Quantity is required
+              </mat-error>
+              <mat-error class="error-msg" *ngIf="quantity?.errors?.['min']">
+                Quantity cannot be less than 1
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div *ngIf="cake.cakeType == 'Cake'">
+          <h3 class="cake-question">Select Cake Weight:</h3>
+          <mat-chip-listbox
+            #weight="ngModel"
+            name="quantity"
+            [(ngModel)]="cakeOrder.quantity"
+          >
+            <mat-chip-option [value]="1">1 kg</mat-chip-option>
+            <mat-chip-option [value]="2">2 kg</mat-chip-option>
+            <mat-chip-option [value]="3">3 kg</mat-chip-option>
+            <mat-chip-option [value]="4">4 kg</mat-chip-option>
+            <mat-chip-option [value]="5">5 kg</mat-chip-option>
+          </mat-chip-listbox>
+        </div>
+
+        <div>
+          <h3 class="cake-question">Total Amount</h3>
+          <mat-form-field class="form-field">
+            <input
+              type="number"
+              readonly
+              matInput
+              name="totalAmount"
+              value="{{ cakeOrder.quantity! * cake.cakePrice! }}"
+            />
+          </mat-form-field>
+        </div>
+        <h3 class="cake-question">Enter Personal Details</h3>
+        <div class="form-container">
+          <div>
+            <mat-form-field class="form-field">
+              <mat-label>Name</mat-label>
+              <input
+                type="text"
+                name="customerName"
+                #customerName="ngModel"
+                [(ngModel)]="cakeOrder.customerName"
+                matInput
+                minlength="2"
+                placeholder="Ex. James"
+                required
+              />
+              <mat-error
+                class="error-msg"
+                *ngIf="customerName?.errors?.['required']"
+              >
+                Name is required
+              </mat-error>
+              <mat-error
+                class="error-msg"
+                *ngIf="customerName.errors?.['minlength']"
+              >
+                Name minimum length should be atleast 2 letters
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="right-side-input">
+            <mat-form-field class="form-field">
+              <mat-label>Phone Number</mat-label>
+              <input
+                type="tel"
+                matInput
+                [(ngModel)]="cakeOrder.customerPhoneNum"
+                name="customerPhoneNum"
+                #customerPhoneNum="ngModel"
+                placeholder="Ex. 9326081356"
+                pattern="^[789]\d{9}$"
+                required
+              />
+              <mat-error
+                class="error-msg"
+                *ngIf="customerPhoneNum?.errors?.['required']"
+              >
+                Phone Number is required
+              </mat-error>
+              <mat-error
+                class="error-msg"
+                *ngIf="customerPhoneNum?.errors?.['pattern']"
+              >
+                Enter valid phone number containing 10 digits starting with
+                7/8/9
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <h3 class="cake-question">Address</h3>
+        <div class="form-container">
+          <div class="items">
+            <mat-form-field class="formField">
+              <mat-label>State</mat-label>
+              <input
+                type="text"
+                matInput
+                [(ngModel)]="cakeOrder.state"
+                name="state"
+                #state="ngModel"
+                placeholder="Ex. Maharashtra"
+                required
+              />
+              <mat-error class="error-msg" *ngIf="state?.errors?.['required']">
+                State is required
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="formField">
+              <mat-label>City</mat-label>
+              <input
+                type="text"
+                matInput
+                [(ngModel)]="cakeOrder.city"
+                name="city"
+                #city="ngModel"
+                placeholder="Ex. Mumbai"
+                required
+              />
+              <mat-error class="error-msg" *ngIf="city?.errors?.['required']">
+                City is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="items">
+            <mat-form-field class="formField">
+              <mat-label>Street</mat-label>
+              <input
+                type="text"
+                matInput
+                [(ngModel)]="cakeOrder.street"
+                name="street"
+                #street="ngModel"
+                placeholder="Ex. Tilak Nagar"
+                required
+              />
+              <mat-error class="error-msg" *ngIf="street?.errors?.['required']">
+                Street is required
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="formField">
+              <mat-label>Pincode</mat-label>
+              <input
+                type="text"
+                matInput
+                [(ngModel)]="cakeOrder.pincode"
+                name="pincode"
+                #pincode="ngModel"
+                placeholder="Ex. 400077"
+                pattern="\d{5,}"
+                required
+              />
+              <mat-error
+                class="error-msg"
+                *ngIf="pincode?.errors?.['required']"
+              >
+                Pincode is required
+              </mat-error>
+              <mat-error class="error-msg" *ngIf="pincode?.errors?.['pattern']">
+                Pincode should contain atleast 5 digits
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <button
+          [disabled]="orderForm.invalid"
+          id="button"
+          mat-raised-button
+          color="primary"
+          type="submit"
+        >
+          Order Now
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

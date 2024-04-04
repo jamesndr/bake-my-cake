@@ -1,0 +1,48 @@
+#login-form{
+    margin-top: 16%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 2%;
+}
+button{
+    display: block;
+    margin-left: 5.5rem;
+    margin-top: 10px;
+}
+p{
+    text-align: center;
+    margin-bottom: 12.4rem;
+}
+#icon{
+    padding-left: 7rem;
+    color: #0c122f;
+}
+#card{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h3{
+    padding-left: 4.5rem;
+    font-weight: 500;
+}
+#form-field{
+    width: 90%;
+}
+#error-msg{
+    font-size: small;
+}
+.mat-mdc-raised-button.mat-primary {
+    --mdc-protected-button-container-color: #0c122f;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 20px;
+}
+p a:hover{
+    text-decoration-line:underline;
+    color: #0c122f;
+}

@@ -1,0 +1,12 @@
+div{
+    padding-left: 32px;
+    padding-bottom: 25px;
+}
+.mat-chip-option{
+    margin-right: 20px;
+}
+.mat-mdc-standard-chip {
+--mdc-chip-elevated-container-color: #ffffff;
+}
+.mat-mdc-standard-chip.mat-mdc-chip-selected.mat-primary, .mat-mdc-standard-chip.mat-mdc-chip-highlighted.mat-primary {
+    --mdc-chip-elevated-container-color: #0c122f;}

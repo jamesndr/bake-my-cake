@@ -1,0 +1,97 @@
+#cake-img {
+  margin-left: 20px;
+  width: 96%;
+  height: 50%;
+}
+#cake-img-container {
+  width: 46%;
+}
+#container {
+  display: flex;
+  margin-top: 120px;
+}
+#cake-details {
+  margin-left: 50px;
+}
+.cake-name {
+  font-weight: 400;
+  font-size: 30px;
+  font-family: Roboto, sans-serif;
+}
+#cake-type {
+  background-color: #fff;
+  font-size: 18px;
+  padding: 5px;
+  border: 1px solid #80808070;
+  border-radius: 20px;
+  width: fit-content;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  margin-top: -15px;
+}
+#price {
+  padding-top: 10px;
+}
+#cake-price {
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  font-size: 45px;
+  padding-left: 10px;
+  margin-top: -25px;
+}
+#quantity {
+  width: 67%;
+}
+#quantity-container {
+  margin-left: 50px;
+  width: 100%;
+}
+#star-icon {
+  color: goldenrod;
+}
+.cake-question {
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+}
+.hint {
+  font-size: small;
+}
+.form-container {
+  display: flex;
+}
+.right-side-input {
+  margin-left: 50px;
+}
+.form-field {
+  width: 20rem;
+}
+#address {
+  width: 40rem;
+}
+#button {
+  width: 87%;
+}
+#product-desc {
+  margin-left: 20px;
+  line-height: 23px;
+}
+.error-msg {
+  font-size: small;
+}
+
+.formField {
+  width: 85%;
+}
+.items {
+  width: 47%;
+}
+.mat-mdc-standard-chip {
+  --mdc-chip-elevated-container-color: #ffffff;
+}
+.mat-mdc-raised-button.mat-primary {
+  --mdc-protected-button-container-color: #0c122f;
+}
+.mat-mdc-standard-chip.mat-mdc-chip-selected.mat-primary,
+.mat-mdc-standard-chip.mat-mdc-chip-highlighted.mat-primary {
+  --mdc-chip-elevated-container-color: #0c122f;
+}

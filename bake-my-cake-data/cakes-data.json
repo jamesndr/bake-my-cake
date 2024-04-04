@@ -1,0 +1,284 @@
+{
+  "cakes": [
+    {
+      "id": 1,
+      "cakeName": "Chocolate Blueberries Cake",
+      "cakeType": "Cake",
+      "cakePrice": 450,
+      "cakeRating": 5,
+      "cakeDescription": "Satisfy your sweet cravings with our heavenly Chocolate Blueberries Cake – a symphony of rich chocolate decadence and the burst of juicy blueberries. Handcrafted to perfection, this divine dessert is a celebration of flavors that will transport you to a world of indulgence. Embrace the symphony of flavors and textures in every slice of our Chocolate Blueberries Cake. Elevate your dessert experience and let the magic unfold with this irresistible masterpiece."
+    },
+    {
+      "id": 2,
+      "cakeName": "Berries Summer Cupcakes",
+      "cakeType": "Cupcake",
+      "cakePrice": 240,
+      "cakeRating": 5,
+      "cakeDescription": "Introducing our delightful Berries Summer Cupcakes, the perfect fusion of freshness and sweetness to elevate your summer celebrations! Bursting with vibrant flavors and adorned with a feast of seasonal berries, these cupcakes are a tantalizing treat for your taste buds. Each cupcake is a miniature work of art, featuring a moist and fluffy vanilla or lemon-infused cake base that serves as the perfect canvas for the symphony of berries on top. Picture plump strawberries, juicy blueberries, and succulent raspberries, creating a colorful and visually stunning presentation."
+    },
+    {
+      "id": 3,
+      "cakeName": "Chocolate Cookies",
+      "cakeType": "Cookie",
+      "cakePrice": 65,
+      "cakeRating": 4,
+      "cakeDescription": "Indulge your senses with our irresistible Chocolate Cookies – a symphony of rich, velvety chocolate flavor and the perfect crunch in every bite. Crafted with the finest ingredients, these decadent cookies are a true delight for chocolate enthusiasts. Our secret recipe combines premium cocoa with the perfect balance of butter and sugar, resulting in a cookie that is not only intensely chocolatey but also exquisitely tender."
+    },
+    {
+      "id": 4,
+      "cakeName": "Easter Cupcakes",
+      "cakeType": "Cupcake",
+      "cakePrice": 70,
+      "cakeRating": 3,
+      "cakeDescription": "Elevate your Easter celebration with our irresistibly charming Easter Delight Cupcakes – a whimsical fusion of flavor and festivity! These delectable treats are crafted with precision and love to add a touch of sweetness to your joyous festivities. Don't miss out on the chance to elevate your Easter celebration with our Easter Delight Cupcakes. Order now and treat yourself and your loved ones to a taste of springtime sweetness!"
+    },
+    {
+      "id": 5,
+      "cakeName": "Fruit Cake",
+      "cakeType": "Cake",
+      "cakePrice": 650,
+      "cakeRating": 5,
+      "cakeDescription": "Indulge your taste buds in the rich symphony of flavors with our exquisite Fruit Cake. Crafted with care and perfected over time, this delectable dessert is a celebration of premium ingredients and traditional baking expertise. Treat yourself and your loved ones to the exceptional flavor of our Fruit Cake. Order yours today and embark on a journey of sweet delight!"
+    },
+    {
+      "id": 6,
+      "cakeName": "Cherry Jelly Cheesecake",
+      "cakeType": "Cake",
+      "cakePrice": 680,
+      "cakeRating": 4,
+      "cakeDescription": "Introducing our delectable Cherry Jelly Cheesecake – a tantalizing fusion of rich, creamy cheesecake and the vibrant burst of succulent cherries. This exquisite dessert is a celebration of indulgence, skillfully crafted to satisfy the most discerning palates. Indulge in the luxurious experience of our Cherry Jelly Cheesecake – a dessert that transcends the ordinary and elevates your taste buds to new heights. Immerse yourself in the symphony of flavors and savor the magic of this unforgettable culinary creation."
+    },
+    {
+      "id": 7,
+      "cakeName": "Isometric chocolate brownies",
+      "cakeType": "Brownie",
+      "cakePrice": 100,
+      "cakeRating": 5,
+      "cakeDescription": "Introducing our delectable Isometric Chocolate Brownies—a true masterpiece in the world of indulgence. Immerse yourself in a symphony of flavors and textures with every bite of these divine treats. Indulge your senses and treat yourself to the extraordinary. Elevate your chocolate experience with our Isometric Chocolate Brownies—where perfection meets pleasure in every bite."
+    },
+    {
+      "id": 8,
+      "cakeName": "Classic Cheesecake",
+      "cakeType": "Cake",
+      "cakePrice": 425,
+      "cakeRating": 4,
+      "cakeDescription": "Indulge in the timeless elegance of our Classic Cheesecake, a decadent dessert that captivates the senses with every velvety bite. Crafted with meticulous attention to detail, this dessert is a symphony of rich, creamy goodness and a buttery graham cracker crust. Elevate your dessert experience with our Classic Cheesecake – where tradition meets indulgence in a symphony of flavors that will leave you craving more. Treat yourself to the extraordinary and make every moment sweet with this iconic delight."
+    },
+    {
+      "id": 9,
+      "cakeName": "Butter Cookies",
+      "cakeType": "Cookie",
+      "cakePrice": 225,
+      "cakeRating": 3,
+      "cakeDescription": "Experience the sublime pleasure of our artisan-crafted Butter Cookies, where tradition meets exceptional taste. These delicate treats are a testament to the time-honored artistry of baking, combining premium ingredients with a touch of culinary expertise to create a symphony of flavors that will captivate your palate. Treat yourself to a moment of pure bliss with our Classic Butter Cookies—a culinary masterpiece that elevates the simple pleasure of indulgence."
+    },
+    {
+      "id": 10,
+      "cakeName": "Brownies Different Flavor",
+      "cakeType": "Brownie",
+      "cakePrice": 350,
+      "cakeRating": 5,
+      "cakeDescription": "Satisfy your sweet cravings with our decadent Brownie Different Flavor Variety Pack. Crafted with love and the finest ingredients, this assortment promises a symphony of flavors that will tantalize your taste buds and elevate your dessert experience. Don't miss out on this delightful assortment of brownie bliss. Order your Brownie Different Flavor Variety Pack today and embark on a journey of irresistible taste sensations!"
+    },
+    {
+      "id": 11,
+      "cakeName": "Cookies Cream Cake",
+      "cakeType": "Cake",
+      "cakePrice": 680,
+      "cakeRating": 4,
+      "cakeDescription": "Indulge your taste buds in the irresistible allure of our Cookies and Cream Cake, a decadent masterpiece that seamlessly blends the rich flavors of velvety chocolate, delicate vanilla, and the satisfying crunch of gourmet cookies. This cake is a symphony of textures and tastes, making every bite a heavenly experience. Spoil your senses and elevate your dessert experience with our Cookies and Cream Cake — a celebration in every bite."
+    },
+    {
+      "id": 12,
+      "cakeName": "Chocolate Cupcake",
+      "cakeType": "Cupcake",
+      "cakePrice": 200,
+      "cakeRating": 4,
+      "cakeDescription": "Indulge your taste buds in a symphony of rich, velvety chocolate with our exquisite Chocolate Cupcakes. Each moist and decadent cupcake is a miniature masterpiece, crafted with the finest ingredients to create a heavenly treat for your senses. Share the joy of chocolate with friends and family or savor the moment in solitude – either way, our Chocolate Cupcakes are a celebration of indulgence that you won't want to miss."
+    },
+    {
+      "id": 13,
+      "cakeName": "Chocolate Bonbons",
+      "cakeType": "Bonbons",
+      "cakePrice": 149,
+      "cakeRating": 5,
+      "cakeDescription": "Indulge your senses with our exquisite Chocolate Bonbons, a symphony of flavor and craftsmanship that promises to elevate your chocolate experience. Each bonbon is a miniature work of art, meticulously crafted by our master chocolatiers to captivate both the eye and the palate. Discover the artistry of chocolate with our Chocolate Bonbons – a harmonious blend of exquisite taste and visual delight that will elevate your chocolate experience to new heights."
+    },
+    {
+      "id": 14,
+      "cakeName": "Pumpkin Spice Cupcakes",
+      "cakeType": "Cupcake",
+      "cakePrice": 250,
+      "cakeRating": 4,
+      "cakeDescription": "Introducing our delectable Pumpkin Spice Cupcakes – a perfect blend of autumn flavors in every bite! Crafted with care and passion, these cupcakes are a celebration of the cozy warmth that pumpkin spice brings to the season. Fall in love with the flavors of autumn with every bite of our Pumpkin Spice Cupcakes – a true delight for your senses."
+    },
+    {
+      "id": 15,
+      "cakeName": "Monster Theme Cake",
+      "cakeType": "Cake",
+      "cakePrice": 350,
+      "cakeRating": 4,
+      "cakeDescription": "Introducing our show-stopping Monster Theme Cake, a delight for both the eyes and the taste buds! Perfect for birthdays, celebrations, or any occasion where you want to bring a touch of whimsy and excitement. This cake is not just a dessert; it's a masterpiece that captures the essence of fun and fantasy. Order now and let the monsters bring a burst of color, joy, and deliciousness to your special day!"
+    },
+    {
+      "id": 16,
+      "cakeName": "Muffin Devil Horns",
+      "cakeType": "Cupcake",
+      "cakePrice": 65,
+      "cakeRating": 3,
+      "cakeDescription": "Introducing our delectable Muffin Devil Horns – a devilishly delightful twist on the classic muffin! These sinfully scrumptious treats are the perfect fusion of heavenly flavors and a touch of mischievous fun. Treat yourself to the extraordinary with Muffin Devil Horns – because sometimes, a little temptation is exactly what your taste buds need!"
+    },
+    {
+      "id": 17,
+      "cakeName": "Chocolate Summer Berries",
+      "cakeType": "Cake",
+      "cakePrice": 500,
+      "cakeRating": 5,
+      "cakeDescription": "Introducing our delectable Chocolate Summer Berries, a delightful blend of rich, velvety chocolate and the vibrant flavors of sun-kissed berries. This exquisite treat is a symphony of indulgence, combining the smoothness of premium chocolate with the burst of sweetness and tartness from an assortment of summer berries. Indulge in the essence of the season with our Chocolate Summer Berries – a sensory masterpiece that captures the essence of sunshine and the joy of savoring life's sweet moments."
+    },
+    {
+      "id": 18,
+      "cakeName": "Muffin Ghost",
+      "cakeType": "Cupcake",
+      "cakePrice": 75,
+      "cakeRating": 4,
+      "cakeDescription": "Introducing our delightful and whimsical creation: the Muffin Ghost Cupcake! Perfectly blending the sweetness of a classic muffin with the playful charm of a ghostly apparition, this treat is sure to enchant your taste buds. Share the joy, share the sweetness, and let the magic of these ghostly delights haunt your senses in the most delightful way possible!"
+    }
+  ],
+  "cakeOrder": [
+    {
+      "productName": "Cookies Cream Cake",
+      "quantity": 1,
+      "deliveryDate": "2023-11-29T18:30:00.000Z",
+      "message": "Bravo",
+      "customerName": "Mani",
+      "customerPhoneNum": "9356875645",
+      "state": "Maharashtra",
+      "street": "Nalanda",
+      "city": "Mumbai",
+      "pincode": "400079",
+      "totalAmount": 680,
+      "unit": "kg",
+      "id": 4
+    },
+    {
+      "productName": "Fruit Cake",
+      "quantity": 1,
+      "deliveryDate": "2023-11-21T18:30:00.000Z",
+      "message": "Muthuarasan",
+      "customerName": "Subash",
+      "customerPhoneNum": "9306456792",
+      "state": "Telangana",
+      "city": "Hyderabad",
+      "street": "R.T.O",
+      "pincode": "2031331",
+      "totalAmount": 650,
+      "unit": "kg",
+      "id": 5
+    },
+    {
+      "productName": "Classic Cheesecake",
+      "quantity": 1,
+      "deliveryDate": "2023-11-21T18:30:00.000Z",
+      "message": "Kashi",
+      "customerName": "Aakash",
+      "customerPhoneNum": "9372839402",
+      "state": "Maharashtra",
+      "street": "Kamraj Nagar",
+      "city": "Mumbai",
+      "pincode": "400077",
+      "totalAmount": 425,
+      "unit": "kg",
+      "id": 6
+    },
+    {
+      "productName": "Cookies Cream Cake",
+      "quantity": 3,
+      "deliveryDate": "2023-11-28T18:30:00.000Z",
+      "message": "Tushar",
+      "customerName": "Tejas",
+      "customerPhoneNum": "9372839402",
+      "state": "Maharashtra",
+      "street": "R.T.O",
+      "city": "Hyderabad",
+      "pincode": "3789003",
+      "totalAmount": 2040,
+      "unit": "kg",
+      "id": 7
+    },
+    {
+      "productName": "Monster Theme Cake",
+      "quantity": 1,
+      "deliveryDate": "2023-11-28T18:30:00.000Z",
+      "message": "Arjun",
+      "customerName": "James",
+      "customerPhoneNum": "9356875645",
+      "state": "Telangana",
+      "street": "R.T.O",
+      "city": "Hyderabad",
+      "pincode": "400079",
+      "totalAmount": 350,
+      "unit": "kg",
+      "id": 8
+    },
+    {
+      "productName": "Cookies Cream Cake",
+      "quantity": 1,
+      "deliveryDate": "2023-11-21T18:30:00.000Z",
+      "message": "Mani vannan",
+      "customerName": "James",
+      "customerPhoneNum": "9372839402",
+      "state": "Maharashtra",
+      "street": "Kamraj Nagar",
+      "city": "Mumbai",
+      "pincode": "2031331",
+      "totalAmount": 680,
+      "unit": "kg",
+      "id": 9
+    },
+    {
+      "productName": "Fruit Cake",
+      "quantity": 1,
+      "deliveryDate": "2023-11-21T18:30:00.000Z",
+      "message": "Venkatesh",
+      "customerName": "Shiva",
+      "customerPhoneNum": "9326082028",
+      "state": "Maharashtra",
+      "street": "R.T.O",
+      "city": "Mumbai",
+      "pincode": "400077",
+      "totalAmount": 650,
+      "unit": "kg",
+      "id": 10
+    },
+    {
+      "productName": "Chocolate Cookies",
+      "quantity": 3,
+      "deliveryDate": "2023-11-21T18:30:00.000Z",
+      "customerName": "Saurabh Sir",
+      "customerPhoneNum": "9326082028",
+      "state": "Maharashtra",
+      "street": "Nalanda",
+      "city": "Mumbai",
+      "pincode": "400077",
+      "totalAmount": 195,
+      "unit": "pieces",
+      "id": 11
+    },
+    {
+      "productName": "Cherry Jelly Cheesecake",
+      "quantity": 4,
+      "deliveryDate": "2023-11-28T18:30:00.000Z",
+      "message": "James",
+      "customerName": "James",
+      "customerPhoneNum": "9306456792",
+      "state": "Maharashtra",
+      "street": "Tilak nagar",
+      "city": "Mumbai",
+      "pincode": "400077",
+      "totalAmount": 2720,
+      "unit": "kg",
+      "id": 12
+    }
+  ]
+}

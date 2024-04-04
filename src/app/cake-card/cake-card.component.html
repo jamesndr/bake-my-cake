@@ -1,0 +1,30 @@
+<mat-card id="cake-card">
+  <a routerLink="cake-order/{{ cake.id }}" matTooltip="{{ cake.cakeName }}">
+    <img
+      id="cake-image"
+      mat-card-image
+      src="../../assets/{{ cake.cakeName }}.jpg"
+      alt="cake image"
+    />
+  </a>
+  <mat-card-content>
+    <h3 class="cake-font">{{ cake.cakeName }}</h3>
+    <h4 id="cake-type">{{ cake.cakeType }}</h4>
+    <p>
+      <mat-icon id="star-icon" *ngFor="let rating of ratings">star</mat-icon>
+    </p>
+    <p id="delivery-msg">Earliest Delivery: <span>Today</span></p>
+    <div id="cake-price">
+      <div id="cake-price-container">
+        <h2 id="cakePrice"><span>&#8377;</span> {{ cake.cakePrice }}</h2>
+      </div>
+      <button
+        color="primary"
+        routerLink="cake-order/{{ cake.id }}"
+        mat-raised-button
+      >
+        Order <mat-icon>shopping_cart</mat-icon>
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,33 @@
+*{
+    font-family: sans-serif;
+}
+#container1{
+    margin-top: 12rem;
+    text-align: center;
+}
+#error-msg1{
+    font-size: 15rem;
+    margin-top: 0px;
+    color: #5c3d3d;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+#error-msg2{
+    font-size: 3rem;
+    color: #424242de;
+    font-family: system-ui;
+}
+#error-msg3{
+    color: #424242de;
+    font-weight: 500;
+    font-family: system-ui;
+}
+a{
+    text-decoration: none;
+}
+#container2{
+    text-align: center;
+    margin-bottom: 11rem;
+}
+.mat-mdc-raised-button.mat-primary {
+    --mdc-protected-button-container-color: #0c122f;}

@@ -1,0 +1,19 @@
+<app-header [isHomeComponent]="isHomeComponent" (searchedText)="onSearchedText($event)"></app-header>
+<div id="hero-unit">
+    <a routerLink="cake-order/1"><img id="cake-banner1" src="../../assets/Cake-Banner.png" alt=""></a>
+    <a routerLink="cake-order/13"><img id="cake-banner2" src="../../assets/Cake-Banner2.png" alt=""></a>
+</div>
+<app-filter (filterText)="onFiltered($event)"></app-filter>
+<div>
+    <app-cake-card *ngFor="let cake of cakes" [cake]="cake"></app-cake-card>
+</div>
+<app-footer></app-footer>
+
+
+
+
+
+
+
+
+

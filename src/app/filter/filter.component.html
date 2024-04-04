@@ -1,0 +1,11 @@
+<div>
+  <mat-chip-listbox aria-label="Fish selection" [(ngModel)]="cakeType" (ngModelChange)="onSelectChange()">
+    <mat-chip-option class="mat-chip-option" value="All">All</mat-chip-option>
+    <mat-chip-option  value="Cake">Cake</mat-chip-option>
+    <mat-chip-option  value="Cupcake" selected
+      >Cupcake</mat-chip-option>
+    <mat-chip-option  value="Cookie">Cookie</mat-chip-option>
+    <mat-chip-option  value="Brownie">Brownie</mat-chip-option>
+    <mat-chip-option  value="Bonbons">Bonbons</mat-chip-option>
+  </mat-chip-listbox>
+</div>

@@ -1,0 +1,8 @@
+#table-section{
+    margin-top: 6.7rem;
+    margin-bottom: 20rem;
+}
+.mat-mdc-raised-button.mat-unthemed {
+    --mdc-protected-button-container-color: #0c122f;
+    --mdc-protected-button-label-text-color: #fff;
+}
